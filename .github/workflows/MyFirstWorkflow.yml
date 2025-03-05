@@ -24,6 +24,7 @@ on:
         description: 'Environment to run tests against'
         required: true
         type: environment
+        default: ''
   
 jobs:
   MyFirstJob:
