@@ -68,6 +68,13 @@ jobs:
     needs: [job_2, job_3]
     steps:
       - run: "echo Job: ${{ github.job }}"
+
+  InstallDep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Dependencies
+        run: npm install
+      - run: npm run build
       
 
 
